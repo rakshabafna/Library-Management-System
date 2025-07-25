@@ -12,8 +12,8 @@ import java.sql.DriverManager;
 public class DBconnection {
     public static Connection getConnection() throws Exception {
         String url = "jdbc:sqlserver://localhost:1433;databaseName=LibraryManagement;encrypt=true;trustServerCertificate=true";
-        String user = "raksha2";
-        String pass = "1234";
+        String user = "your username";
+        String pass = "your password";
 
         Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
         return DriverManager.getConnection(url, user, pass);
